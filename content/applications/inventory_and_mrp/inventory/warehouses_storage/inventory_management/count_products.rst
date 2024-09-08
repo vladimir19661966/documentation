@@ -138,7 +138,7 @@ To print a PDF of a count sheet, add products to the count sheet by ticking thei
 On each product line, identify whether the value in the :guilabel:`On Hand Quantity` column recorded
 in the database matches the newly-counted value. If the recorded value and the counted value do
 match, select the product using the checkbox, and then select
-:menuselection:`Actions --> Set to quantity on hand`.
+the :guilabel:`Actions` button, then :guilabel:`Set to quantity on hand`.
 
 Doing so copies the value from the :guilabel:`On Hand Quantity` column over to the
 :guilabel:`Counted Quantity` column, and sets the value of the :guilabel:`Difference` column to
@@ -194,8 +194,7 @@ Then, select the desired products to be counted by clicking the checkbox on the 
 product line.
 
 Once all desired products have been selected, click the :guilabel:`Request a Count` button at the
-top of the page. This causes a :guilabel:`Request a Count` pop-up window to appear. From this
-pop-up, fill in the following information:
+top of the page. Doing so opens the :guilabel:`Request a Count` pop-up window, where the following information can be filled:
 
 .. tip::
    To request a count of **all** products currently in stock, click the checkbox at the very top of
