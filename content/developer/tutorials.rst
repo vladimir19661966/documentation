@@ -13,9 +13,9 @@ Tutorials
    tutorials/define_module_data
    tutorials/restrict_data_access
    tutorials/unit_tests
+   tutorials/importable_modules
    tutorials/mixins
    tutorials/pdf_reports
-   tutorials/importable_modules
 
 .. tip::
    If you are new to Odoo development, we recommend starting with the :doc:`setup guide
@@ -75,7 +75,7 @@ Expand your knowledge on the server framework
       Write effective unit tests in Python to ensure the resilience of your code and safeguard it
       against unexpected behaviors and regressions.
 
-   .. card:: Importable Modules
+   .. card:: Write importable modules
       :target: tutorials/importable_modules
 
       Write modules that define new models, fields and logic using only data files.
