@@ -1,4 +1,5 @@
 :show-content:
+:hide-page-toc:
 
 ====================
 Server framework 101

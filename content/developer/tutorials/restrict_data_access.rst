@@ -15,7 +15,7 @@ currently,
   update or delete properties, property types, or property tags.
 * If ``estate_account`` is installed then only agents allowed to interact
   with invoicing can confirm sales as that's necessary to :ref:`create an
-  invoice <tutorials/server_framework_101/13_other_module/create>`.
+  invoice <tutorials/server_framework_101_legacy/13_other_module/create>`.
 
 However:
 

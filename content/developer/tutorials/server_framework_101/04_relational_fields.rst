@@ -970,6 +970,6 @@ with each property.
 
 Congratulations! You've learned the art of forging connections between your Odoo models. You're now
 well-equipped to build complex, interconnected data structures. In the next chapter, we'll
-:doc:`add custom business logic to the models <05_business_logic>`, turning your application from a
-simple data management tool into a smart, automated system that can handle complex business
+:doc:`add custom business logic to the models <05_connect_the_dots>`, turning your application from
+a simple data management tool into a smart, automated system that can handle complex business
 processes.

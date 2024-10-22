@@ -1,9 +1,15 @@
-======================
-Old: Add The Sprinkles
-======================
+=============================
+Chapter 11: Add The Sprinkles
+=============================
+
+.. danger::
+   This tutorial is outdated. We recommend reading :doc:`../server_framework_101` instead.
+
+.. seealso::
+   :doc:`Homepage of the tutorial <../server_framework_101_legacy>`
 
 Our real estate module now makes sense from a business perspective. We created
-specific views <06_basicviews>, added several
+:doc:`specific views <06_basicviews>`, added several
 :doc:`action buttons <09_actions>` and
 :doc:`constraints <10_constraints>`. However our user interface is still a bit
 rough. We would like to add some colors to the list views and make some fields and buttons conditionally
@@ -267,7 +273,7 @@ behavior customizations, we can add the ``options`` attribute to several field w
     Have a look at the :ref:`FieldMany2ManyTags widget documentation <reference/js/widgets>`
     for more info.
 
-In 05_firstui, we saw that reserved fields were used for
+In :doc:`05_firstui`, we saw that reserved fields were used for
 specific behaviors. For example, the ``active`` field is used to automatically filter out
 inactive records. We added the ``state`` as a reserved field as well. It's now time to use it!
 A ``state`` field can be used in combination with an ``invisible`` attribute in the view to display

@@ -1,6 +1,12 @@
-============================
-Old: A Brief History Of QWeb
-============================
+===================================
+Chapter 14: A Brief History Of QWeb
+===================================
+
+.. danger::
+   This tutorial is outdated. We recommend reading :doc:`../server_framework_101` instead.
+
+.. seealso::
+   :doc:`Homepage of the tutorial <../server_framework_101_legacy>`
 
 So far the interface design of our real estate module has been rather limited. Building
 a list view is straightforward since only the list of fields is necessary. The same holds true
