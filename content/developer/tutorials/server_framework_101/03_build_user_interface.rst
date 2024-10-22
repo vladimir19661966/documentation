@@ -193,7 +193,7 @@ the `ir.actions.act_window` model whose key fields include:
 `res_model` (required)
    The model on which the action operates.
 `view_mode`
-   A comma-separated list of view types to enable for this action; for example, `tree,form,kanban`.
+   A comma-separated list of view types to enable for this action; for example, `list,form,kanban`.
 `help`
    An optional help text for the users when there are no records to display.
 
@@ -201,14 +201,14 @@ the `ir.actions.act_window` model whose key fields include:
    :doc:`Reference documentation for actions <../../reference/backend/actions>`
 
 .. example::
-   The example below defines an action to open existing products in either list (tree) or form view.
+   The example below defines an action to open existing products in either list or form view.
 
    .. code-block:: xml
 
       <record id="product.view_products_action" model="ir.actions.act_window">
           <field name="name">Products</field>
           <field name="res_model">product</field>
-          <field name="view_mode">tree,form</field>
+          <field name="view_mode">list,form</field>
           <field name="help" type="html">
               <p class="o_view_nocontent_smiling_face">
                   Create a new product.
@@ -257,7 +257,7 @@ now is an action to assign to the menu item.
           <record id="real_estate.views_properties_action" model="ir.actions.act_window">
               <field name="name">Properties</field>
               <field name="res_model">real.estate.property</field>
-              <field name="view_mode">tree,form</field>
+              <field name="view_mode">list,form</field>
               <field name="help" type="html">
                   <!-- Turns out I didn't feel like being creative with the help text ¯\_(ツ)_/¯ -->
                   <p class="o_view_nocontent_smiling_face">
@@ -310,7 +310,7 @@ determining which data it displays and interacts with. Key fields include:
 
 The `arch` field holds the view's XML architecture, which is composed of a root element determining
 the type of the view, and various inner components that depend on the view type. The root element
-(e.g., `tree`, `form`, `search`) defines the view type, while the inner components describe the
+(e.g., `list`, `form`, `search`) defines the view type, while the inner components describe the
 structure and content of the view. These components can be structural (like `sheet` that makes the
 layout responsive, or `group` that defines column layouts) or semantic (like `field` that displays
 field labels and values).
@@ -331,11 +331,11 @@ field labels and values).
           <field name="name">Product List</field>
           <field name="model">product</field>
           <field name="arch" type="xml">
-              <tree>
+              <list>
                   <field name="name"/>
                   <field name="price"/>
                   <field name="category"/>
-              </tree>
+              </list>
           </field>
       </record>
 
@@ -376,7 +376,6 @@ field labels and values).
    .. note::
 
       - The XML structure differs between view types.
-      - For historical reasons, the root element of list views is `tree`.
       - The `description` field is omitted from the list view because it wouldn't fit visually.
 
 In :ref:`the previous section <tutorials/server_framework_101/define_window_actions>`, we defined
@@ -442,7 +441,7 @@ For a start, the list view could use more fields than just the name.
               <field name="name">Property List</field>
               <field name="model">real.estate.property</field>
               <field name="arch" type="xml">
-                  <tree>
+                  <list>
                       <field name="name"/>
                       <field name="state"/>
                       <field name="type"/>
@@ -452,7 +451,7 @@ For a start, the list view could use more fields than just the name.
                       <field name="bedrooms" optional="hide"/>
                       <field name="has_garden" optional="hide"/>
                       <field name="has_garage" optional="hide"/>
-                  </tree>
+                  </list>
               </field>
           </record>
 
@@ -693,7 +692,7 @@ Let's enhance the search capabilities.
           <field name="name">Properties</field>
           <field name="res_model">real.estate.property</field>
           <field name="context">{'search_default_filter_for_sale': True}</field>
-          <field name="view_mode">tree,form</field>
+          <field name="view_mode">list,form</field>
           <field name="help" type="html">
               <!-- Turns out I didn't feel like being creative with the help text ¯\_(ツ)_/¯ -->
               <p class="o_view_nocontent_smiling_face">

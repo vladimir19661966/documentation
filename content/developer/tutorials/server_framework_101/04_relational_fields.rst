@@ -302,7 +302,7 @@ managing property types.
       <record id="real_estate.views_property_types_action" model="ir.actions.act_window">
           <field name="name">Property Types</field>
           <field name="res_model">real.estate.property.type</field>
-          <field name="view_mode">tree</field>
+          <field name="view_mode">list</field>
       </record>
 
    .. code-block:: xml
@@ -315,9 +315,9 @@ managing property types.
               <field name="name">Property Type List</field>
               <field name="model">real.estate.property.type</field>
               <field name="arch" type="xml">
-                  <tree editable="bottom">
+                  <list editable="bottom">
                       <field name="name"/>
-                  </tree>
+                  </list>
               </field>
           </record>
 
@@ -379,11 +379,11 @@ managing property types.
 
       <record id="real_estate.property_list" model="ir.ui.view">
           [...]
-              <tree>
+              <list>
                   [...]
                   <field name="type_id"/>
                   [...]
-              </tree>
+              </list>
           [...]
       </record>
 
@@ -683,13 +683,13 @@ to a list of offers received from potential buyers.
               <field name="name">Offer List</field>
               <field name="model">real.estate.offer</field>
               <field name="arch" type="xml">
-                  <tree>
+                  <list>
                       <field name="amount"/>
                       <field name="buyer_id"/>
                       <field name="date"/>
                       <field name="validity"/>
                       <field name="state"/>
-                  </tree>
+                  </list>
               </field>
           </record>
 
@@ -913,7 +913,7 @@ with each property.
       <record id="real_estate.views_tags_action" model="ir.actions.act_window">
           <field name="name">Tags</field>
           <field name="res_model">real.estate.tag</field>
-          <field name="view_mode">tree</field>
+          <field name="view_mode">list</field>
       </record>
 
    .. code-block:: xml
@@ -926,10 +926,10 @@ with each property.
               <field name="name">Tag List</field>
               <field name="model">real.estate.tag</field>
               <field name="arch" type="xml">
-                  <tree editable="bottom">
+                  <list editable="bottom">
                       <field name="name"/>
                       <field name="color" widget="color_picker"/>
-                  </tree>
+                  </list>
               </field>
           </record>
 
