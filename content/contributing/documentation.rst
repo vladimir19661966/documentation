@@ -150,7 +150,7 @@ to make changes from the GitHub interface.
 .. _contributing/documentation/first-contribution:
 
 Contributing to the documentation
-=================================
+======================================
 
 .. tabs::
 
